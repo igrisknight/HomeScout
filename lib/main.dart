@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homescout/src/features/authentication/screens/spalsh_screen/splash_screen.dart';
 import 'package:homescout/src/utils/theme/theme.dart';
 
 void main() {
