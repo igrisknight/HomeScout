@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:homescout/src/utils/theme/widget_theme/text_theme.dart';
 
 class HAppTheme{
