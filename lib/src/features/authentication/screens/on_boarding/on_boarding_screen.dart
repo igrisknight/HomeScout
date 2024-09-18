@@ -1,0 +1,75 @@
+import 'package:flutter/material.dart';
+import 'package:homescout/src/constants/colors.dart';
+import 'package:homescout/src/constants/image_string.dart';
+import 'package:homescout/src/constants/sizes.dart';
+import 'package:homescout/src/constants/text_string.dart';
+import 'package:homescout/src/features/authentication/models/model_on_boarding.dart';
+import 'package:homescout/src/features/authentication/screens/on_boarding/on_boarding_page_widget.dart';
+import 'package:liquid_swipe/liquid_swipe.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+class OnBoardingScreen extends StatefulWidget {
+  OnBoardingScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
+    return Scaffold(
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          LiquidSwipe(
+           pages: pages,
+            liquidController: controller,
+            onPageChangeCallback: onPageChangeCallback,
+            slideIconWidget: const Icon(Icons.arrow_back_ios),
+            enableSideReveal: true,
+          ),
+          Positioned(
+              bottom: 60.0,
+              child: OutlinedButton(
+                  onPressed: (){
+                    int nextPage = controller.currentPage + 1;
+                    controller.animateToPage(page: nextPage);
+                  },
+                  style: ElevatedButton.styleFrom(
+                    side: const BorderSide(color: Colors.black26),
+                    shape: const CircleBorder(),
+                    padding: const EdgeInsets.all(20),
+                    overlayColor: Colors.white,
+                  ),
+                child: Container(
+                  padding: const EdgeInsets.all(20),
+                  decoration: const BoxDecoration(
+                    color: Color(0xFF272727), shape: BoxShape.circle,
+                  ),
+                  child: const Icon(Icons.arrow_forward_ios),
+                ),
+              ),
+          ),
+          Positioned(
+              top: 50,
+              right: 20,
+              child: TextButton(
+                  onPressed: () => ,
+              child: const Text("Skip", style: TextStyle(color: Colors.grey),))
+          ),
+          Positioned(
+            bottom: 5,
+              child: AnimatedSmoothIndicator(
+                  activeIndex: controller.currentPage,
+                  count: 3,
+                  effect: const WormEffect(
+                    activeDotColor: Color(0xFF272727),
+                    dotHeight: 5.0,
+                  ),
+              ),
+          )
+        ],
+      ),
+    );
+  }
+
+
+  }
+}
+
