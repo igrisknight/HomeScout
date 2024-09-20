@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../../../constants/sizes.dart';
-import '../../../../constants/text_string.dart';
 import '../../models/model_on_boarding.dart';
 
 class OnBoardingPageWidget extends StatelessWidget {
@@ -28,7 +27,7 @@ class OnBoardingPageWidget extends StatelessWidget {
             ],
           ),
           Text(model.counterText, style: Theme.of(context).textTheme.headlineSmall,),
-          SizedBox(height: 80.0,)
+          const SizedBox(height: 80.0,)
         ],
       ),
     );

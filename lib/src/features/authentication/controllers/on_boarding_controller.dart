@@ -21,7 +21,6 @@ class OnBoardingController extends GetxController {
           subTitle: hOnBoardingPage1SubTitle,
           counterText: hOnBoardingCounter1,
           bgColor: hOnBoardingPage1Color,
-          height: height,
         )),
     OnBoardingPageWidget(
         model: OnBoardingModel(
@@ -30,7 +29,6 @@ class OnBoardingController extends GetxController {
             subTitle: hOnBoardingPage2SubTitle,
             counterText: hOnBoardingCounter2,
             bgColor: hOnBoardingPage2Color,
-            height: size.height
         )),
     OnBoardingPageWidget(
         model: OnBoardingModel(
@@ -39,7 +37,6 @@ class OnBoardingController extends GetxController {
           subTitle: hOnBoardingPage3SubTitle,
           counterText: hOnBoardingCounter3,
           bgColor: hOnBoardingPage3Color,
-          height: size.height,
         )),
   ];
 
