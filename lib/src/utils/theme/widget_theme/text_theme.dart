@@ -1,45 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:homescout/src/constants/colors.dart';
 
 class HTextTheme{
 
   static TextTheme lightTextTheme = TextTheme(
-      displayMedium: GoogleFonts.montserrat(
-        color: Colors.black87,
-      ),
-      titleMedium: GoogleFonts.montserrat(
-        color: Colors.black54,
-        fontSize: 24,
-      ),
-      headlineMedium: GoogleFonts.montserrat(
-        color: Colors.black87,
-        fontSize: 22,
-        fontWeight: FontWeight.w900,
-      ),
-      headlineSmall: GoogleFonts.montserrat(
-        color: Colors.black87,
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-      ),
+      displayLarge: GoogleFonts.montserrat(fontSize: 28, fontWeight: FontWeight.bold, color: hDarkColor),
+      displayMedium: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.w700,color: hDarkColor,),
+      displaySmall:  GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.w700,color: hDarkColor,),
+      headlineMedium: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.w600,color: hDarkColor),
+      titleLarge: GoogleFonts.montserrat(fontSize: 14, fontWeight: FontWeight.w600, color: hDarkColor,),
   );
-  static TextTheme darkTextTheme = TextTheme(
-      displayMedium: GoogleFonts.montserrat(
-        color: Colors.white70,
-      ),
-      titleMedium: GoogleFonts.montserrat(
-        color: Colors.white60,
-        fontSize: 24,
-      ),
-
-    headlineMedium: GoogleFonts.montserrat(
-      color: Colors.white60,
-      fontSize: 22,
-      fontWeight: FontWeight.w400,
-    ),
-    headlineSmall: GoogleFonts.montserrat(
-      color: Colors.white60,
-      fontSize: 20,
-      fontWeight: FontWeight.bold,
-    ),
+  static TextTheme darkTextTheme = TextTheme(displayLarge: GoogleFonts.montserrat(fontSize: 28, fontWeight: FontWeight.bold, color: hDarkColor),
+    displayMedium: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.w700,color: hWhiteColor,),
+    displaySmall:  GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.w700,color: hWhiteColor,),
+    headlineMedium: GoogleFonts.montserrat(fontSize: 16, fontWeight: FontWeight.w600,color: hWhiteColor),
+    titleLarge: GoogleFonts.montserrat(fontSize: 14, fontWeight: FontWeight.w600, color: hWhiteColor,),
   );
 }

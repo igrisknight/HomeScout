@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 /*list of colors*/
 
-const hPrimaryColor = Color(0xFF71b0ff);
-const hSecondaryColor = Color(0xFF11243b);
+const hPrimaryColor = Color(0xFF6699CC);
+const hSecondaryColor = Color(0xFF003366);
 const hAccentColor = Color(0xFFFFD700);
 
 const hCardBgColor = Color(0xFFF7F6F1);
