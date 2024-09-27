@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:homescout/src/utils/theme/widget_theme/elevated_button_theme.dart';
 import 'package:homescout/src/utils/theme/widget_theme/outlined_button_theme.dart';
 import 'package:homescout/src/utils/theme/widget_theme/text_theme.dart';
+import 'package:homescout/src/utils/theme/widget_theme/textfield_theme.dart';
 
 class HAppTheme{
 
@@ -12,11 +13,13 @@ class HAppTheme{
       textTheme: HTextTheme.lightTextTheme,
       outlinedButtonTheme: HOutlinedButtonTheme.LightOutlinedButtonTheme,
       elevatedButtonTheme: HElevatedButtonTheme.LightElevatedButtonTheme,
+      inputDecorationTheme: HTextFormFieldTheme.lightInputDecorationTheme
   );
   static ThemeData darkTheme = ThemeData(
       brightness: Brightness.dark,
       textTheme: HTextTheme.darkTextTheme,
     outlinedButtonTheme: HOutlinedButtonTheme.DarkOutlinedButtonTheme,
     elevatedButtonTheme: HElevatedButtonTheme.DarkElevatedButtonTheme,
+    inputDecorationTheme: HTextFormFieldTheme.darkInputDecorationTheme
   );
 }

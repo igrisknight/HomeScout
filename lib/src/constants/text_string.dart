@@ -39,4 +39,10 @@ const String hLoginSubTitle = "Have a Dream Home, Get it !";
 const String hRememberMe = "Remember Me";
 const String hDontHaveAnAccount = "Don't Have An Account? ";
 
+//sign up screen text//
+const String hSignUpTitle = "Get On Board!!";
+const String hSignUpSubTitle = "Create your profile and get going...";
+const String hAlreadyHaveAnAccount = "Already Have An Account? ";
+
+
 

@@ -8,6 +8,7 @@ import 'package:homescout/src/constants/image_string.dart';
 import 'package:homescout/src/constants/sizes.dart';
 import 'package:homescout/src/constants/text_string.dart';
 import 'package:homescout/src/features/authentication/screens/login/login_screen.dart';
+import 'package:homescout/src/features/authentication/screens/signup_screen/signup_screen.dart';
 
 
 class WelcomeScreen extends StatelessWidget {
@@ -63,7 +64,7 @@ class WelcomeScreen extends StatelessWidget {
                         ),
                         Expanded(
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () => Get.to(const SignupScreen()),
                             child: Text(hSignup.toUpperCase()))),
                       ],
                     )

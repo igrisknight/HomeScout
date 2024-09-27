@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 /*list of colors*/
 
-const hPrimaryColor = Color(0xFF6699CC);
-const hSecondaryColor = Color(0xFF003366);
-const hAccentColor = Color(0xFFFFD700);
+const hPrimaryColor = Color(0xFFFFE400);
+const hSecondaryColor = Color(0xFF272727);
+const hAccentColor = Color(0xFF001BFF);
 
 const hCardBgColor = Color(0xFFF7F6F1);
 const hWhiteColor = Color(0xFFFFFFFF);
