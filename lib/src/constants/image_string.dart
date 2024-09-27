@@ -1,5 +1,6 @@
 
 //--- App Images String ---//
+
 const String hSplashTopIcon = "assets/images/splash_images/splash_screen_top_node.png";
 const String hSplashImage = "assets/images/splash_images/splash_screen_image.jpg";
 
@@ -12,4 +13,4 @@ const String hOnBoardingPage3Image = "assets/images/on_boarding_images/OnBoardin
 const String hWelcomeScreenImage = "assets/images/welcome_images/welcome_screen_image.jpeg";
 
 //Login Texts//
-cinst String hGoogleLogo = "assets/logo/googleLogo.png";
+const String hGoogleLogo = "assets/logo/googleLogo.png";

@@ -5,6 +5,12 @@
 //Generic texts//
 const String hLogin = "Login";
 const String hSignup = "Signup";
+const String hEmail = "E-Mail";
+const String hPhoneNo = "Phone No";
+const String hPassword = "Password";
+const String hFullName = "Full Name";
+const String hForgetPassword = "Forget Password";
+const String hSignInWithGoogle = "Sign-In with Google";
 
 
 //splash screen text//
@@ -26,5 +32,11 @@ const String hOnBoardingCounter3 = "3/3";
 //Welcome screen text//
 const String hWelcomePageTitle = "Welcome to HomeSeek";
 const String hWelcomePageSubTitle = "Discover, Explore, and Secure Your Perfect Home";
+
+//Login Screen Text//
+const String hLoginTitle = "Welcome Back";
+const String hLoginSubTitle = "Have a Dream Home, Get it !";
+const String hRememberMe = "Remember Me";
+const String hDontHaveAnAccount = "Don't Have An Account? ";
 
 

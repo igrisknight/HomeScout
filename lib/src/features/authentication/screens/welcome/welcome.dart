@@ -7,6 +7,7 @@ import 'package:homescout/src/constants/colors.dart';
 import 'package:homescout/src/constants/image_string.dart';
 import 'package:homescout/src/constants/sizes.dart';
 import 'package:homescout/src/constants/text_string.dart';
+import 'package:homescout/src/features/authentication/screens/login/login_screen.dart';
 
 
 class WelcomeScreen extends StatelessWidget {
@@ -55,7 +56,7 @@ class WelcomeScreen extends StatelessWidget {
                       children: [
                         Expanded(
                           child: OutlinedButton(
-                            onPressed: () {},
+                            onPressed: () => Get.to(const LoginScreen()),
                             child: Text(hLogin.toUpperCase()))),
                         const SizedBox(
                           width: 10.0,
