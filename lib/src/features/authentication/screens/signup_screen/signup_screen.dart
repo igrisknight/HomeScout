@@ -19,7 +19,7 @@ class SignupScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FormHeaderWidget(
+                FormHeaderWidget(
                     image: hWelcomeScreenImage,
                     title: hSignUpTitle,
                     subTitle: hSignUpSubTitle),
