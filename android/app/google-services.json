@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "445312139082",
+    "project_id": "homescout-10855",
+    "storage_bucket": "homescout-10855.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445312139082:android:71df633ec0e3b4fe688bb3",
+        "android_client_info": {
+          "package_name": "com.example.homescout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_H1Ae3mCVvzMkPZNe41wP3s_IoeFzrkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

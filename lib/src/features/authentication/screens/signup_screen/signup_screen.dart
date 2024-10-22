@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:homescout/src/common_widgets/form/form_header_widget.dart';
-import 'package:homescout/src/constants/colors.dart';
 import 'package:homescout/src/constants/image_string.dart';
 import 'package:homescout/src/constants/sizes.dart';
 import 'package:homescout/src/constants/text_string.dart';

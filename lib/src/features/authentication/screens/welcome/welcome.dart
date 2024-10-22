@@ -32,12 +32,12 @@ class WelcomeScreen extends StatelessWidget {
               durationInMs: 1200,
               animate: HAnimatePosition(bottomAfter: 0, bottomBefore: -100, leftBefore: 0, leftAfter: 0, topAfter: 0, topBefore: 0, rightAfter: 0, rightBefore: 0),
               child: Container(
-                 padding: EdgeInsets.all(hDefaultSize),
+                 padding: const EdgeInsets.all(hDefaultSize),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Image(
-                        image: AssetImage(hWelcomeScreenImage), //change this image.//
+                        image: const AssetImage(hWelcomeScreenImage), //change this image.//
                         height: height * 0.6,
                       ),
                   Column(

@@ -62,3 +62,15 @@ const String hOtpTitle = "CO\nDE";
 const String hOtpSubTitle = "Verification";
 const String hOtpMessage = "Enter the verification code sent at ";
 
+//DashBoard screen text//
+const String hDashBoardTitle = "HomeScout";
+const String hDashBoardHeading = "Explore Your Dream House";
+const String hDashBoardSearch = "Search...";
+const String hDashBoardBannerTitle1 = "Modern Apartment";
+const String hDashBoardBannerTitle2 = "Luxury Villas";
+const String hDashBoardButton = "View All";
+const String hDashBoardFeaturedListing = "Featured Listings";
+
+
+
+

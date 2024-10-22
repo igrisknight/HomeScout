@@ -1,9 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:homescout/firebase_options.dart';
 import 'package:homescout/src/features/authentication/screens/spalsh_screen/splash_screen.dart';
 import 'package:homescout/src/utils/theme/theme.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
