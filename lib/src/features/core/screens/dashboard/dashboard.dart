@@ -8,55 +8,69 @@ import 'package:homescout/src/features/core/screens/dashboard/widgets/banner.dar
 import 'package:homescout/src/features/core/screens/dashboard/widgets/categories.dart';
 import 'package:homescout/src/features/core/screens/dashboard/widgets/search.dart';
 import 'package:homescout/src/features/core/screens/dashboard/widgets/top_features.dart';
+import 'package:get/get.dart';  // Import GetX for navigation
+import 'package:homescout/src/features/core/screens/SearchScreen/SearchScreen.dart'; // Ensure correct import path
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    //Variable
+    // Variable
     final txtTheme = Theme.of(context).textTheme;
 
     return SafeArea(
       child: Scaffold(
-        appBar: const DashBoardAppBar(),
+        appBar: AppBar(
+          title: Text('Dashboard'),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              // Navigate back to Home Page
+              Get.back();
+            },
+          ),
+        ),
         body: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.all(hDashboardPadding),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                //heading
-                Text(hDashBoardTitle, style: txtTheme.displayLarge,),
-                SizedBox(height: 10,),
-                Text(hDashBoardHeading, style: txtTheme.displayLarge,),
+                // Heading
+                Text(hDashBoardTitle, style: txtTheme.displayLarge),
+                SizedBox(height: 10),
+                Text(hDashBoardHeading, style: txtTheme.displayLarge),
                 const SizedBox(
                   height: hDashboardPadding,
                 ),
-                //search box
-                DashBoardSearchBox(txtTheme: txtTheme),
-                const SizedBox(
-                  height: hDashboardPadding+10,
+                // Search box
+                DashBoardSearchBox(
+                  txtTheme: txtTheme,
+                  onPressed: () {
+                    // Navigate to SearchScreen using GetX
+                    Get.to(() => SearchScreen());
+                  },
                 ),
-
-                //Categories
+                const SizedBox(
+                  height: hDashboardPadding + 10,
+                ),
+                // Categories
                 DashBoardCategories(txtTheme: txtTheme),
                 const SizedBox(
-                  height: hDashboardPadding+10,
+                  height: hDashboardPadding + 10,
                 ),
-
-                //Banners
+                // Banners
                 DashBoardBanner(txtTheme: txtTheme),
                 const SizedBox(
-                  height: hDashboardPadding+10,
+                  height: hDashboardPadding + 10,
                 ),
-
-                //featured listing
+                // Featured listing
                 Text(
                   hDashBoardFeaturedListing,
                   style: txtTheme.headlineMedium?.apply(fontSizeFactor: 1.2),
                 ),
-                DashBoardFeatures(txtTheme: txtTheme)
+                DashBoardFeatures(txtTheme: txtTheme),
               ],
             ),
           ),
@@ -65,7 +79,3 @@ class Dashboard extends StatelessWidget {
     );
   }
 }
-
-
-
-

@@ -6,6 +6,7 @@ import 'package:homescout/src/features/authentication/screens/forget_password/fo
 import 'package:homescout/src/features/authentication/screens/forget_password/forget_password_options/forget_password_model_bottom_sheet.dart';
 import 'package:homescout/src/features/authentication/screens/welcome/welcome.dart';
 import 'package:homescout/src/features/core/screens/dashboard/dashboard.dart';
+import 'package:homescout/src/features/core/screens/home/home_view.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({

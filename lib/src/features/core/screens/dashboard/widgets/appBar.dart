@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:homescout/src/constants/colors.dart';
 import 'package:homescout/src/constants/image_string.dart';
 import 'package:homescout/src/constants/text_string.dart';
+import 'package:homescout/src/repository/authentication_repository/authentication_repository.dart';
 
 class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget{
   const DashBoardAppBar({
@@ -28,7 +29,9 @@ class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget{
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10), color: hCardBgColor),
           child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                AuthenticationRepository.instance.logout();
+              },
               icon: const Image(image: AssetImage(hUserProfileImage))),
         )
       ],
